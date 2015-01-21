@@ -327,7 +327,7 @@ function addSets(pokes){
 			}
 		}		
 	}
-	alert("Successfully added "+addedpokes+" sets");
+	alert("Successfully imported "+addedpokes+" sets");
 }
 
 function checkExeptions(poke){
