@@ -315,7 +315,7 @@ function addSets(pokes){
 					currentPoke.nameProp = currentRow[j-1].trim();
 
 				}else{
-					currentPoke.nameProp = "individual set";
+					currentPoke.nameProp = "custom set";
 
 				}
 				currentPoke.ability = getAbility(rows[i+1].split(":"));
