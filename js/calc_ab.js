@@ -491,15 +491,10 @@ function checkExeptions(poke){
 		case 'Rotom-Heat':
 			poke = "Rotom-H";
 			break;
-		case 'Meowstick-F':
-			poke = "Meowstick";
+		case 'Meowstic-F':
+			poke = "Meowstic";
 			break;
-		case 'Nidoran-F':
-			poke = "Nidoran";
-			break;
-		case 'Nidoran-M':
-			poke = "Nidoran";
-			break;
+
 		case 'Pikachu-Belle':	
 		case 'Pikachu-Cosplay':	
 		case 'Pikachu-Libre':
