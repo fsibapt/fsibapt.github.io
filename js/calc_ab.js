@@ -153,7 +153,7 @@ function placeBsBtn(){
     $("#import-1_wrapper").append(importBtn);
     $(".bs-btn").click(function() {
 		console.log("click");
-		var pokes = document.getElementById("import-team-text").value
+		var pokes = document.getElementsByClassName("import-team-text")[0].value;
 		addSets(pokes);     
     });
 	
