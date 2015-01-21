@@ -302,6 +302,7 @@ function addSets(pokes){
 	var rows = pokes.split("\n");
 	var currentRow;
 	var currentPoke;
+	var addedpokes = 0;
 	for (i = 0; i < rows.length; i++) {
 		currentRow = rows[i].split(/[\(\)@]/);
 		for (j = 0; j<currentRow.length;j++){
@@ -321,11 +322,12 @@ function addSets(pokes){
 				currentPoke = getStats(currentPoke,rows,i+2);
 				currentPoke = getMoves(currentPoke,rows,i+2);
 				addToDex(currentPoke);
-				console.log(currentPoke);
+				addedpokes++:
 
 			}
 		}		
 	}
+	alert("Successfully added "+addedpokes+" sets");
 }
 
 function checkExeptions(poke){
