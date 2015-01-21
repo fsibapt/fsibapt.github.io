@@ -152,7 +152,6 @@ function placeBsBtn(){
 	var importBtn = "<button class='bs-btn bs-btn-default'>Import</button>";
     $("#import-1_wrapper").append(importBtn);
     $(".bs-btn").click(function() {
-		console.log("click");
 		var pokes = document.getElementsByClassName("import-team-text")[0].value;
 		addSets(pokes);     
     });
@@ -295,7 +294,6 @@ function addToDex(poke){
 	dexObject.nature = poke.nature;
 	dexObject.item = poke.item;
 	SETDEX_XY[poke.name][poke.nameProp] = dexObject;
-	console.log(SETDEX_XY[poke.name]);
 }
 
 function addSets(pokes){
@@ -513,5 +511,4 @@ $(document).ready(function() {
     $(".calc-trigger").bind("change keyup", calculate);
     calculate();
 	placeBsBtn();
-	console.log("document ready");
 });
