@@ -322,7 +322,7 @@ function addSets(pokes){
 				currentPoke = getStats(currentPoke,rows,i+2);
 				currentPoke = getMoves(currentPoke,rows,i+2);
 				addToDex(currentPoke);
-				addedpokes++:
+				addedpokes++;
 
 			}
 		}		
