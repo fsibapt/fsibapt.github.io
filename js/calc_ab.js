@@ -521,6 +521,15 @@ function checkExeptions(poke){
 		case 'Wormadam-Trash':
 			poke = "Wormadam-S";
 			break;
+		case 'Deoxys-Attack':
+			poke = "Deoxys-A";
+			break;
+		case 'Deoxys-Defense':
+			poke = "Deoxys-D";
+			break;
+		case 'Deoxys-Speed':
+			poke = "Deoxys-S";
+			break;
 		case 'Pikachu-Belle':	
 		case 'Pikachu-Cosplay':	
 		case 'Pikachu-Libre':
