@@ -254,22 +254,21 @@ function getMoves(currentPoke,rows,i){
 	var moves = new Array();
 	for(x = i;x<i+10;x++){
 
-		if(rows[x][0] == "-"){
-			movesFound = true;
-			
-			var move = rows[x].substr(2,rows[x].length-2).replace("[","").replace("]","");	
-			moves.push(move);
-
-		}else {
-			if (movesFound == true){
-				break;
-
-			}
-
-		}	
-		
-		
-		
+		if(rows[x]){
+			if(rows[x][0] == "-"){
+				movesFound = true;
+				
+				var move = rows[x].substr(2,rows[x].length-2).replace("[","").replace("]","");	
+				moves.push(move);
+	
+			}else {
+				if (movesFound == true){
+					break;
+	
+				}
+	
+			}			
+		}
 	}
 	currentPoke.moves = moves;
 	return currentPoke;
