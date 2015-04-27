@@ -497,7 +497,30 @@ function checkExeptions(poke){
 		case 'Kyurem-White':
 			poke = "Kyurem-W";
 			break;
-
+		case 'Landorus-Therian':
+			poke = "Landorus-T";
+			break;
+		case 'Tornadus-Therian':
+			poke = "Tornadus-T";
+			break;
+		case 'Thundurus-Therian':
+			poke = "Thundurus-T";
+			break;
+		case 'Giratina-Origin':
+			poke = "Giratina-O";
+			break;
+		case 'Gourgeist':
+			poke = "Gourgeist-Average";
+			break;	
+		case 'Shaymin-Sky':
+			poke = "Shaymin-S";
+			break;
+		case 'Wormadam-Sandy':
+			poke = "Wormadam-G";
+			break;
+		case 'Wormadam-Trash':
+			poke = "Wormadam-S";
+			break;
 		case 'Pikachu-Belle':	
 		case 'Pikachu-Cosplay':	
 		case 'Pikachu-Libre':
