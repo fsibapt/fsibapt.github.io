@@ -492,6 +492,12 @@ function checkExeptions(poke){
 		case 'Meowstic-F':
 			poke = "Meowstic";
 			break;
+		case 'Kyurem-Black':
+			poke = "Kyurem-B";
+			break;
+		case 'Kyurem-White':
+			poke = "Kyurem-W";
+			break;
 
 		case 'Pikachu-Belle':	
 		case 'Pikachu-Cosplay':	
