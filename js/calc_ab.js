@@ -293,6 +293,9 @@ function addToDex(poke){
 	dexObject.nature = poke.nature;
 	dexObject.item = poke.item;
 	SETDEX_XY[poke.name][poke.nameProp] = dexObject;
+	if(poke.name == "Aegislash-Blade"){
+		SETDEX_XY["Aegislash-Shield"][poke.nameProp] = 	dexObject;
+	}
 }
 
 function addSets(pokes){
@@ -529,6 +532,9 @@ function checkExeptions(poke){
 			break;
 		case 'Deoxys-Speed':
 			poke = "Deoxys-S";
+			break;
+		case 'Aegislash':
+			poke = "Aegislash-Blade";
 			break;
 		case 'Pikachu-Belle':	
 		case 'Pikachu-Cosplay':	
