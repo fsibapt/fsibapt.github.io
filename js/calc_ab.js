@@ -298,8 +298,14 @@ function addToDex(poke){
 	else{
 		customsets = {};
 	}
+	if(!customsets[poke.name]){
+		customset[poke.name] = {};
+	}
 	customsets[poke.name][poke.nameProp] = dexObject;
 	if(poke.name == "Aegislash-Blade"){
+		if(!customsets["Aegislash-Shield"]){
+			customsets["Aegislash-Shield"] = {};
+		}
 		customsets["Aegislash-Shield"][poke.nameProp] = 	dexObject;
 	}
 	updateDex(customsets);
