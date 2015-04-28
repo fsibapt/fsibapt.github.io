@@ -299,7 +299,7 @@ function addToDex(poke){
 		customsets = {};
 	}
 	if(!customsets[poke.name]){
-		customset[poke.name] = {};
+		customsets[poke.name] = {};
 	}
 	customsets[poke.name][poke.nameProp] = dexObject;
 	if(poke.name == "Aegislash-Blade"){
