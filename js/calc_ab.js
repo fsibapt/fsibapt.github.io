@@ -317,7 +317,7 @@ function updateDex(customsets){
 			SETDEX_XY[pokemon][moveset] = customsets[pokemon][moveset];
 		}
 	}
-	localStorage = JSON.stringify(customsets);
+	localStorage.customsets = JSON.stringify(customsets);
 }
 
 function addSets(pokes){
