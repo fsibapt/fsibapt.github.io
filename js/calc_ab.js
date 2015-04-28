@@ -198,10 +198,10 @@ function getStats(currentPoke,rows,i){
 	currentPoke.level = 100;
 	for(x = i;x<i+6;x++){
 		var currentRow = rows[x].split(/[/:]/);
-		var evs = new Array();
-		var ivs = new Array();	
+		var evs = new Object();
+		var ivs = new Object();
 		var ev
-		
+
 		switch(currentRow[0]){
 			case 'Level':
 				currentPoke.level = parseInt(currentRow[1].trim());
