@@ -292,10 +292,26 @@ function addToDex(poke){
 	dexObject.moves = poke.moves;
 	dexObject.nature = poke.nature;
 	dexObject.item = poke.item;
-	SETDEX_XY[poke.name][poke.nameProp] = dexObject;
-	if(poke.name == "Aegislash-Blade"){
-		SETDEX_XY["Aegislash-Shield"][poke.nameProp] = 	dexObject;
+	if(localStorage.customsets){
+		customsets = JSON.parse(localStorage.customsets);
 	}
+	else{
+		customsets = {};
+	}
+	customsets[poke.name][poke.nameProp] = dexObject;
+	if(poke.name == "Aegislash-Blade"){
+		customsets["Aegislash-Shield"][poke.nameProp] = 	dexObject;
+	}
+	updateDex(customsets);
+}
+
+function updateDex(customsets){
+	for(pokemon in customsets){
+		for(moveset in customsets[pokemon]){
+			SETDEX_XY[pokemon][moveset] = customsets[pokemon][moveset];
+		}
+	}
+	localStorage = JSON.stringify(customsets);
 }
 
 function addSets(pokes){
