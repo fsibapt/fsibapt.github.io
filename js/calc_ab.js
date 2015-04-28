@@ -9,6 +9,10 @@ $("#p2 .item").bind("keyup change", function() {
 lastManualStatus["#p2"] = "Healthy";
 lastAutoStatus["#p1"] = "Healthy";
 
+if(localStorage.customsets){
+	updateDex(JSON.parse(localStorage.customsets));
+}
+
 function getTerrainEffects() {
     var className = $(this).prop("className");
     className = className.substring(0, className.indexOf(" "));
